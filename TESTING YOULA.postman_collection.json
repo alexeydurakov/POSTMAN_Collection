@@ -1,0 +1,840 @@
+{
+	"info": {
+		"_postman_id": "139676fc-5f30-49ae-b060-db1bba9090ad",
+		"name": "TESTING YOULA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/5b1505c1f69576dc3472916c?adv_id=c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4&app_id=android%2F738&uid=3d58f93b1ed4bb9f&usr_latitude=0.0&usr_longitude=0.0&timestamp=1622983937",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"5b1505c1f69576dc3472916c"
+					],
+					"query": [
+						{
+							"key": "adv_id",
+							"value": "c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4"
+						},
+						{
+							"key": "app_id",
+							"value": "android%2F738"
+						},
+						{
+							"key": "uid",
+							"value": "3d58f93b1ed4bb9f"
+						},
+						{
+							"key": "usr_latitude",
+							"value": "0.0"
+						},
+						{
+							"key": "usr_longitude",
+							"value": "0.0"
+						},
+						{
+							"key": "timestamp",
+							"value": "1622983937"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change email",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-App-Id",
+						"value": "android/738"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"alexey.durakov@gmail.com\"}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/users/5b1505c1f69576dc3472916c/email",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"5b1505c1f69576dc3472916c",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Name",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"first_name\":\"Дураков\",\"last_name\":\"Алексей\",\"image\":\"5b1505f9c6ab9e1c0766d552-1\"}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/5b1505c1f69576dc3472916c?adv_id=c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4&app_id=android%2F738&uid=3d58f93b1ed4bb9f&usr_latitude=0.0&usr_longitude=0.0&timestamp=1622985926",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"5b1505c1f69576dc3472916c"
+					],
+					"query": [
+						{
+							"key": "adv_id",
+							"value": "c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4"
+						},
+						{
+							"key": "app_id",
+							"value": "android%2F738"
+						},
+						{
+							"key": "uid",
+							"value": "3d58f93b1ed4bb9f"
+						},
+						{
+							"key": "usr_latitude",
+							"value": "0.0"
+						},
+						{
+							"key": "usr_longitude",
+							"value": "0.0"
+						},
+						{
+							"key": "timestamp",
+							"value": "1622985926"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change calls",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"call\":{\"any_call_enabled\":true,\"system_call_enabled\":false,\"p2p_call_enabled\":true,\"call_enabled_from\":\"2019-12-01T00:00:00+00:00\",\"call_enabled_to\":\"2019-12-01T00:00:00+00:00\"}}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/5b1505c1f69576dc3472916c",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"5b1505c1f69576dc3472916c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add product in favorit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-App-Id",
+						"value": "android/738"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"favorite_ids\":[\"5f50b02011c84c41d716097a\"]}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/5b1505c1f69576dc3472916c/favorites?adv_id=c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4&app_id=android/738&uid=3d58f93b1ed4bb9f&usr_latitude=0.0&usr_longitude=0.0&target_user=5b1505c1f69576dc3472916c&timestamp=1622987424",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"5b1505c1f69576dc3472916c",
+						"favorites"
+					],
+					"query": [
+						{
+							"key": "adv_id",
+							"value": "c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4"
+						},
+						{
+							"key": "app_id",
+							"value": "android/738"
+						},
+						{
+							"key": "uid",
+							"value": "3d58f93b1ed4bb9f"
+						},
+						{
+							"key": "usr_latitude",
+							"value": "0.0"
+						},
+						{
+							"key": "usr_longitude",
+							"value": "0.0"
+						},
+						{
+							"key": "target_user",
+							"value": "5b1505c1f69576dc3472916c"
+						},
+						{
+							"key": "timestamp",
+							"value": "1622987424"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product from favorit",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-App-Id",
+						"value": "android/738"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"favorite_ids\":[\"5f50b02011c84c41d716097a\"]}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/5b1505c1f69576dc3472916c/favorites?adv_id=c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4&app_id=android/738&uid=3d58f93b1ed4bb9f&usr_latitude=0.0&usr_longitude=0.0&target_user=5b1505c1f69576dc3472916c&timestamp=1622988003",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"5b1505c1f69576dc3472916c",
+						"favorites"
+					],
+					"query": [
+						{
+							"key": "adv_id",
+							"value": "c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4"
+						},
+						{
+							"key": "app_id",
+							"value": "android/738"
+						},
+						{
+							"key": "uid",
+							"value": "3d58f93b1ed4bb9f"
+						},
+						{
+							"key": "usr_latitude",
+							"value": "0.0"
+						},
+						{
+							"key": "usr_longitude",
+							"value": "0.0"
+						},
+						{
+							"key": "target_user",
+							"value": "5b1505c1f69576dc3472916c"
+						},
+						{
+							"key": "timestamp",
+							"value": "1622988003"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of products in favorites",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/5b1505c1f69576dc3472916c/favorites?page=0&limit=40&owner_id=5b1505c1f69576dc3472916c&target_user=5b1505c1f69576dc3472916c&adv_id=c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4&app_id=android%2F738&uid=3d58f93b1ed4bb9f&usr_latitude=0.0&usr_longitude=0.0&timestamp=1622988364",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"5b1505c1f69576dc3472916c",
+						"favorites"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "40"
+						},
+						{
+							"key": "owner_id",
+							"value": "5b1505c1f69576dc3472916c"
+						},
+						{
+							"key": "target_user",
+							"value": "5b1505c1f69576dc3472916c"
+						},
+						{
+							"key": "adv_id",
+							"value": "c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4"
+						},
+						{
+							"key": "app_id",
+							"value": "android%2F738"
+						},
+						{
+							"key": "uid",
+							"value": "3d58f93b1ed4bb9f"
+						},
+						{
+							"key": "usr_latitude",
+							"value": "0.0"
+						},
+						{
+							"key": "usr_longitude",
+							"value": "0.0"
+						},
+						{
+							"key": "timestamp",
+							"value": "1622988364"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscribe to the seller",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-App-Id",
+						"value": "android/738"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_ids\":[\"5de526b8226e48866c747f85\"]}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/subscription/following",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"subscription",
+						"following"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete subscribe",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-App-Id",
+						"value": "android/738"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_ids\":[\"5de526b8226e48866c747f85\"]}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/subscription/following",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"subscription",
+						"following"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change notfication",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"settings\":{\"product_status_push_enabled\":false,\"buyer_interest_notification_enabled\":false,\"favorite_push_enabled\":false,\"messages_push_enabled\":false,\"subscription_push_enabled\":false,\"important_sms_enabled\":false}}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/5b1505c1f69576dc3472916c",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"5b1505c1f69576dc3472916c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"message\":\"W\"}"
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/chat/60bc838b8433a8036321e930/messages?adv_id=c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4&app_id=android%2F738&uid=3d58f93b1ed4bb9f&usr_latitude=0.0&usr_longitude=0.0&timestamp=1622999467",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"chat",
+						"60bc838b8433a8036321e930",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "adv_id",
+							"value": "c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4"
+						},
+						{
+							"key": "app_id",
+							"value": "android%2F738"
+						},
+						{
+							"key": "uid",
+							"value": "3d58f93b1ed4bb9f"
+						},
+						{
+							"key": "usr_latitude",
+							"value": "0.0"
+						},
+						{
+							"key": "usr_longitude",
+							"value": "0.0"
+						},
+						{
+							"key": "timestamp",
+							"value": "1622999467"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete chat",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Youla/4.19.1 (test-YOUAND-7003) (1024e5b61b) (Android Version 10)"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "a73950db33d4d525c3eff15287fa0751"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Og=="
+					},
+					{
+						"key": "X-Youla-Splits",
+						"value": "8a=1|8b=4|8c=1|8m=6|8z=8|100a=39|100b=96|100c=100|100m=30"
+					},
+					{
+						"key": "Host",
+						"value": "api.youla.io"
+					}
+				],
+				"url": {
+					"raw": "https://api.youla.io/api/v1/chat/60bc838b8433a8036321e930?adv_id=c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4&app_id=android%2F738&uid=3d58f93b1ed4bb9f&usr_latitude=0.0&usr_longitude=0.0&timestamp=1623000914",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"chat",
+						"60bc838b8433a8036321e930"
+					],
+					"query": [
+						{
+							"key": "adv_id",
+							"value": "c2aaa9a6-b13d-4751-8eb7-7d48461c1bb4"
+						},
+						{
+							"key": "app_id",
+							"value": "android%2F738"
+						},
+						{
+							"key": "uid",
+							"value": "3d58f93b1ed4bb9f"
+						},
+						{
+							"key": "usr_latitude",
+							"value": "0.0"
+						},
+						{
+							"key": "usr_longitude",
+							"value": "0.0"
+						},
+						{
+							"key": "timestamp",
+							"value": "1623000914"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
